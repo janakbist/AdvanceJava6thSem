@@ -1,6 +1,7 @@
 package np.edu.scst;
 import java.awt.*;
 import javax.swing.*;
+//import java.ClassTutorials.*;
 
 public class DrawingShapes extends JFrame{
     DrawingShapes() {
@@ -21,7 +22,9 @@ public class DrawingShapes extends JFrame{
                 g2.drawRect(20,20,20,20);
                 g2.drawOval(10,70,50,30);
                 g2.drawOval(70,70,50,50);
+                //x-axis,y-axis,width,height,0deggre,90deggre)
                 g2.drawArc(100, 100, 200, 200, 0, 90);
+                
                 int[] x ={200,400,800};
                 int[] y ={200,500,300};
                 //3 is no of points
