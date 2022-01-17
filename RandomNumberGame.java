@@ -10,12 +10,13 @@ public class RandomNumberGame {
         Scanner s = new Scanner(System.in); 
         String name = s.next();
         System.out.println("Hello " + name);
-        System.out.println("Start the Game");
+        System.out.println("Shall we Start the Game?");
         System.out.println("\t 1.Yes");
         System.out.println("\t 2.No");
+        try{
         int yesNo = s.nextInt();
         while(yesNo != 1){
-        System.out.println("Start the Game");
+        System.out.println("Shall we Start the Game?");
         System.out.println("\t 1.Yes");
         System.out.println("\t 2.No");
          yesNo = s.nextInt();
@@ -53,9 +54,16 @@ public class RandomNumberGame {
             System.out.println("Congratulation! You have guessed in your "+timesTried+"guess");
         }
         else{
-            System.out.println("Game Over!"+randomNum);
-        }
+            System.out.println("Game Over!");
+            System.out.println("The number was : " +randomNum);
+        } 
 
+    }catch(Exception e){
+        
+            System.out.println("Please Enter Number Not character"+e);
+            
+    
+    }
     }
     
 }
