@@ -73,6 +73,7 @@ public class Hello extends JFrame{
     public static void main(String[] args) {
         
         Hello h = new Hello();
+        system.out.println("Basic java swing important components added");
     }
     
 }
